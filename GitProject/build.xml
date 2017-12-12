@@ -48,6 +48,6 @@
         <antcall target="build"/>
     </target>
         <target name="run" depends="build">
-        <java jar="build/jar/helloworld.jar" fork="true"/>
+        <java jar="bin/helloWorld.jar" fork="true"/>
     </target>            
 </project>
