@@ -47,4 +47,7 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
+        <target name="run" depends="jar">
+        <java jar="build/jar/helloworld.jar" fork="true"/>
+    </target>            
 </project>
