@@ -5,5 +5,5 @@ language: java
 before_install: ant -buildfile ./GitProject/build.xml run
 install:
 - docker build .
-- docker login -u pkondratiev -p l0govera hub.docker.com
+- docker login -u pkondratiev -p l0govera cloud.docker.com
 - docker push 
