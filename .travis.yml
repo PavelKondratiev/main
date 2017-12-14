@@ -1,4 +1,9 @@
+sudo: required
+services:
+  - docker
 language: java
 script: ant -buildfile ./GitProject/build.xml run
-deploy:
-  skip_cleanup: true
+install:
+- docker build .
+- docker images -a
+- docker run -it bash
