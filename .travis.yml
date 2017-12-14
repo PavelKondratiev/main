@@ -1,2 +1,4 @@
 language: java
 script: ant -buildfile ./GitProject/build.xml run
+deploy:
+  skip_cleanup: true
