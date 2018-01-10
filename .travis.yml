@@ -4,6 +4,6 @@ services:
 language: java
 script: ant -buildfile ./GitProject/build.xml run
 after_success:
-- docker login -u "pkondratiev" -p "l0govera" cloud.docker.com
-- docker build -f Dockerfile -t <repository_name> .
-- docker push <repository_name>
+- docker login -u "pkondratiev" -p "l0govera"
+- docker build -f Dockerfile -t pkondratiev/test .
+- docker push pkondratiev/test
